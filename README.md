@@ -33,7 +33,7 @@ $ npm install
 ```
 
 ## File .env
-
+```bash
 PORT=5000
 POSTGRES_PORT_EXTERNAL=5432
 HOST=localhost
@@ -44,6 +44,7 @@ JWT_SECRET=123456789
 
 DB_PORT=5432
 DB_SYNC=true
+```
 
 ## Configuration Postgres Docker
 
