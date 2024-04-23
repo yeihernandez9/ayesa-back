@@ -32,6 +32,25 @@
 $ npm install
 ```
 
+## File .env
+
+PORT=5000
+POSTGRES_PORT_EXTERNAL=5432
+HOST=localhost
+USERNAME=postgres
+PASSWORD=
+DATABASE=ayesa
+JWT_SECRET=123456789
+
+DB_PORT=5432
+DB_SYNC=true
+
+## Configuration Postgres Docker
+
+```bash
+$ docker-compose up
+```
+
 ## Migrations 
 
 ```bash
