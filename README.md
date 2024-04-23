@@ -47,7 +47,32 @@ DB_SYNC=true
 ```
 
 ## Configuration Postgres Docker
+ Create file docker-compose.yml
 
+```bash
+version: '3.1'
+
+services:
+
+  psql-db:
+    image: postgres:12.1-alpine
+    ports:
+      - ${POSTGRES_PORT_EXTERNAL}:5432
+    environment:
+      - POSTGRES_USER=${USERNAME}
+      - POSTGRES_PASSWORD=${PASSWORD}
+      - POSTGRES_DB=${DATABASE}
+    volumes:
+      - psql-db-data:/var/lib/postgresql/data
+    networks:
+      - ws-network
+
+volumes:
+  psql-db-data:
+
+networks:
+  ws-network:
+```
 ```bash
 $ docker-compose up
 ```
