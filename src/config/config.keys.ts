@@ -1,0 +1,11 @@
+export enum Configuration {
+    PORT = 'PORT',
+    HOST = 'HOST',
+    POSTGRES_PORT_EXTERNAL='POSTGRES_PORT_EXTERNAL',
+    USERNAME = 'USERNAME',
+    PASSWORD = 'PASSWORD',
+    DATABASE = 'DATABASE',
+    JWT_SECRET = 'JWT_SECRET',
+    DB_PORT='DB_PORT',
+    DB_SYNC='DB_SYNC'
+  }
